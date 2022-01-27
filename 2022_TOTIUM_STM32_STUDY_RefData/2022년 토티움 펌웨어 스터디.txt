@@ -1,15 +1,30 @@
 2022 TOTIUM STM32 Study
-Nucleo-G071RB(M0+)
+NUCLEO-F410RB(Arm Cortex-M4)
+
+NUCLEO-F410RB
+STM32 Nucleo-64 development board with STM32F410RB MCU, supports Arduino and ST morpho connectivity
+
+STM32F410RB
+STM32 Dynamic Efficiency MCU with BAM, High-performance and DSP with FPU, Arm Cortex-M4 MCU with 128 Kbytes of Flash memory, 100 MHz CPU, Art Accelerator
+
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////////
 2022년 토티움 펌웨어 스터디 커리큘럼
 //////////////////////////////////////////////////////////////////////////////////
 타켓 시스템 Nucleo-G071RB
 
-개발 키트 구매관련 JKIT-Nucleo-64 베이직 세트 (Nucleo-F103RB + JKIT-Nucleo-64 + USB mini 5P 케이블) 66,000원 https://smartstore.naver.com/jcnet/products/5978817472 =>TARGET BOARD Nucleo-G071RB
+개발 키트 구매관련 JKIT-Nucleo-64 베이직 세트 (Nucleo-F103RB + JKIT-Nucleo-64 + USB mini 5P 케이블) 66,000원 https://smartstore.naver.com/jcnet/products/5978817472 =>TARGET BOARD Nucleo-G071RB=>NUCLEO-F410RB
 개발 키트 변경
 
 (JC039) 2.2인치 TFT LCD 모듈 176X220 ILI9225 SPI통신 JKIT-Nucleo-64 아두이노 12,100원 https://smartstore.naver.com/jcnet/products/5968661852
+
+2022.01.27.THU
+메인보드 변경 NUCLEO-F410RB
+https://www.mouser.kr/ProductDetail/511-NUCLEO-F410RB
+
 
 
 
