@@ -265,7 +265,67 @@ FOR END*/
 
 
 
+	  /* SungChun CODE ------------------------------------------------------------*/
+	  /* SungChun CODE BEGIN */
 
+	  	  	HAL_GPIO_WritePin(GPIOB, LED0_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED0_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED1_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED1_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED2_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED2_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED3_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED3_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED4_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED4_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED5_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED5_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED6_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED6_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED7_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED7_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED6_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED6_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED5_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED5_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED4_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOC, LED4_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED3_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED3_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED2_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED2_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED1_Pin, GPIO_PIN_SET);
+	        HAL_Delay(100);
+	        HAL_GPIO_WritePin(GPIOB, LED1_Pin, GPIO_PIN_RESET);
+	        HAL_Delay(100);
+
+	  /* SungChun CODE END */
 
 
 
