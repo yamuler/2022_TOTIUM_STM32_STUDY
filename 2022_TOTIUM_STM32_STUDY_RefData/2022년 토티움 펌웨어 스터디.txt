@@ -82,8 +82,23 @@ Nucleo-F103RB 카페 https://cafe.naver.com/lazydigital
 
 
 //////////////////////////////////////////////////////////////////////////////////
-2022.01.22. Sat 19:00 첫번째 시간
+2022.01.22. Sat 19:00 첫번째 시간, 온라인 스터디
 //////////////////////////////////////////////////////////////////////////////////
 강의 자료 구글 독스
 https://docs.google.com/document/d/1oC2mXcUBgU13_wuTfVSaXdgfZmwFRPk2GV7CBn-azx4/edit?usp=sharing
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+2022.02.02. Wed 13:00 두번째 시간, 오프라인 스터디, 김시경 사무실 한성IT에서 진행
+//////////////////////////////////////////////////////////////////////////////////
+박종한 강의 자료(별첨)
+오늘은 GPIO, AVR보다 STM32가 멀티펑션과 기능이 많아서 보다 복잡
+ARM은 저전력 기반 설계됨, AVR은 전원이 인가되면 모든 페리에 클럭이 인가됨, BUT STM32는 클럭을 선택적으로 페리에 줄수 있음.
+STM32F410RB 100MHz, 
+
+CubeMX
+Device or Board Select => Pinout & Configuration RCC, SYS(Serial Wire) => Clock Configuration (Internal or External), Max HCLK 100MHz => Pinout & Configuration GPIO mode and Configuration => SysTick 1ms => Project Manager Toolchain/IDE STM32CubeIDE, Code Generator check Generate peri. => Advanced Settings HAL, LL => GENERATE CODE => CubeIDE => Build and download CMSIS-DAP or DEBUG(RUN)
+
+CMSIS-DAP download
