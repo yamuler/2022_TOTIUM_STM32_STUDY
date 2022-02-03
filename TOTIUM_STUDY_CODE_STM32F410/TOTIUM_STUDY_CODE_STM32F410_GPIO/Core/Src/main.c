@@ -202,8 +202,8 @@ GPIO TOGGLE END*/
 
 
 
+//LED0,1,2,3 => PB12, 13, 14,15 LED4,5,6,7=>PC0,1,2,3
 
-/* FOR START
 	  for(int i=0 ; i< 16 ; i++)
 	      {
 	         switch(i){
@@ -211,27 +211,36 @@ GPIO TOGGLE END*/
 	           case 1:
 	           case 2:
 	           case 3:
+	              HAL_GPIO_TogglePin(GPIOB, 1<<(i+12));
+	              HAL_Delay(10);
 	              HAL_GPIO_TogglePin(GPIOB, 1<<(i+12));break;
 	           case 4:
 	           case 5:
 	           case 6:
 	           case 7:
+	              HAL_GPIO_TogglePin(GPIOC, 1<<(i-4));
+	              HAL_Delay(10);
 	              HAL_GPIO_TogglePin(GPIOC, 1<<(i-4));break;
-	           case 15:
-	           case 14:
-	           case 13:
-	           case 12:
-	              HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));break;
-	           case 11:
-	           case 10:
-	           case 9:
 	           case 8:
-	              HAL_GPIO_TogglePin(GPIOC,  1<<((i-11)+3));break;
+	           case 9:
+	           case 10:
+	           case 11:
+	              HAL_GPIO_TogglePin(GPIOC,  1<<((8-i)+3));
+	              HAL_Delay(10);
+	              HAL_GPIO_TogglePin(GPIOC,  1<<((8-i)+3));break;
+	           case 12:
+	           case 13:
+	           case 14:
+	           case 15:
+	              HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));
+	              HAL_Delay(10);
+	              HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));break;
+
 	             }
-	         HAL_Delay(500);
+	         HAL_Delay(50);
 
 	      }
-FOR END*/
+
 
 
 
@@ -266,7 +275,7 @@ FOR END*/
 
 
 	  /* SungChun CODE ------------------------------------------------------------*/
-	  /* SungChun CODE BEGIN */
+	  /* SungChun CODE BEGIN
 
 	  	  	HAL_GPIO_WritePin(GPIOB, LED0_Pin, GPIO_PIN_SET);
 	        HAL_Delay(100);
@@ -325,7 +334,7 @@ FOR END*/
 	        HAL_GPIO_WritePin(GPIOB, LED1_Pin, GPIO_PIN_RESET);
 	        HAL_Delay(100);
 
-	  /* SungChun CODE END */
+	  SungChun CODE END */
 
 
 
