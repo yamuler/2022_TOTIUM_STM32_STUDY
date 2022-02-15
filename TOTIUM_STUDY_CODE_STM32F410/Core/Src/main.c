@@ -93,8 +93,6 @@ int main(void)
   while (1)
   {
 
-
-
 /* KYG CODE---------------------------------------------------------*/
 /* KYG CODE BEGIN
 
@@ -296,42 +294,60 @@ SungChun CODE END */
 /* FOR, SWITCH LOOP BEGIN */
 //LED0,1,2,3 => PB12, 13, 14,15 LED4,5,6,7=>PC0,1,2,3
 
-	  for(int i=0 ; i< 16 ; i++)
-	      {
-	         switch(i){
-	           case 0:
-	           case 1:
-	           case 2:
-	           case 3:
-	              HAL_GPIO_TogglePin(GPIOB, 1<<(i+12));
-	              HAL_Delay(10);
-//	              HAL_GPIO_TogglePin(GPIOB, 1<<(i+12));break;
-	           case 4:
-	           case 5:
-	           case 6:
-	           case 7:
-	              HAL_GPIO_TogglePin(GPIOC, 1<<(i-4));
-	              HAL_Delay(10);
-//	              HAL_GPIO_TogglePin(GPIOC, 1<<(i-4));break;
-	           case 8:
-	           case 9:
-	           case 10:
-	           case 11:
-	              HAL_GPIO_TogglePin(GPIOC,  1<<((8-i)+3));
-	              HAL_Delay(10);
-//	              HAL_GPIO_TogglePin(GPIOC,  1<<((8-i)+3));break;
-	           case 12:
-	           case 13:
-	           case 14:
-	           case 15:
-	              HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));
-	              HAL_Delay(10);
-//	              HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));break;
 
-	             }
-	         HAL_Delay(50);
+	HAL_Delay(2000);
+	HAL_GPIO_WritePin(GPIOC, LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOB, LED0_Pin|LED1_Pin|LED2_Pin|LED3_Pin, GPIO_PIN_SET);
+	HAL_Delay(1000);
 
-	      }
+	HAL_GPIO_WritePin(GPIOC, LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOB, LED0_Pin|LED1_Pin|LED2_Pin|LED3_Pin, GPIO_PIN_RESET);
+	HAL_Delay(1000);
+
+	HAL_GPIO_TogglePin(GPIOC, LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin);
+	HAL_GPIO_TogglePin(GPIOB, LED0_Pin|LED1_Pin|LED2_Pin|LED3_Pin);
+	HAL_Delay(2000);
+
+	HAL_GPIO_TogglePin(GPIOC, LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin);
+	HAL_GPIO_TogglePin(GPIOB, LED0_Pin|LED1_Pin|LED2_Pin|LED3_Pin);
+	HAL_Delay(1000);
+
+
+	for(int i=0 ; i< 16 ; i++)
+	{
+		switch(i){
+			case 0:
+			case 1:
+			case 2:
+			case 3:
+				HAL_GPIO_TogglePin(GPIOB, 1<<(i+12));
+				HAL_Delay(10);
+				HAL_GPIO_TogglePin(GPIOB, 1<<(i+12));//break;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+				HAL_GPIO_TogglePin(GPIOC, 1<<(i-4));
+				HAL_Delay(10);
+				HAL_GPIO_TogglePin(GPIOC, 1<<(i-4));//break;
+			case 8:
+			case 9:
+			case 10:
+			case 11:
+				HAL_GPIO_TogglePin(GPIOC,  1<<((8-i)+3));
+				HAL_Delay(10);
+				HAL_GPIO_TogglePin(GPIOC,  1<<((8-i)+3));//break;
+			case 12:
+			case 13:
+			case 14:
+			case 15:
+				HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));
+				HAL_Delay(10);
+				HAL_GPIO_TogglePin(GPIOB, 1<<((15-i)+12));//break;
+				}
+		HAL_Delay(50);
+
+	}
 /*FOR, SWITCH LOOP END */
 
 
